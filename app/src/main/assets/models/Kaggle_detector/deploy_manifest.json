@@ -1,0 +1,9 @@
+{
+  "object": "modelLibrary.so",
+  "labels": "deploy_labels.txt",
+  "inference": {
+    "preprocessor": "io.latentai.android.lre.sample.processor.DetectorPreprocessor",
+    "postprocessor": "io.latentai.android.lre.sample.processor.DetectorMnetNMSPostprocessor",
+    "output_ctx": "This model has 4 outputs:\noutput 0 are the selected bounding box coordinates in a normalized scale\noutput 1 are the label indices\noutput 2 are the confidence scores of each candidate\noutput 3 is the number of candidates selected which is pre-set to 10"
+  }
+}
