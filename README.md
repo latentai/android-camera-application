@@ -68,7 +68,7 @@ app/src/main/assets/models/
 The above is an example for a classifier model, which uses the classifier pre/post processors as
 defined by `...processor.DetectorPreprocessor` and `...processor.DetectorMnetNMSPostprocessor` in `deploy_manifest.json`.
 
-> [!Note] While the `deploy_manifest.json` file provides necessary information about pre/post processing, class labels, and the name of the compiled model artifact, its structure is specific to this particular example application, and not dictated by either the compiled `modelLibrary.so` or the Android LRE. Model-specific information about pre/post processing and class labels can be transmitted to your own application in any format that suits your needs.
+> While the `deploy_manifest.json` file provides necessary information about pre/post processing, class labels, and the name of the compiled model artifact, its structure is specific to this particular example application, and not dictated by either the compiled `modelLibrary.so` or the Android LRE. Model-specific information about pre/post processing and class labels can be transmitted to your own application in any format that suits your needs.
 
 ## Override Pre/Post Processors
 The `inference` object inside the `deploy_manifest.json` file contains an `output_ctx` key that describes details of expected input data for preprocessing and output data for postprocessing.
