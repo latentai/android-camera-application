@@ -51,7 +51,7 @@ wget --user=$REPOSITORY_TOKEN_NAME --password=$REPOSITORY_TOKEN_PASSCODE https:/
 
 Copy the `android-lre-release-1.0.0.aar` to `app/libs/`.
 
-## Download a Model
+## Prepare Your Optimized Artifact
 This application already includes an optimized and compiled model. If you want to use a different model you've compiled using [LEIP Optimize](https://docs.latentai.io/leip/optimize/latest/), follow these instructions. 
 
 To add a model to the application, you'll need to place it inside `app/src/main/assets/models`. 
@@ -65,10 +65,9 @@ app/src/main/assets/models/
     └── deploy_manifest.json
 
 ```
-The above is an example for a classifier model, which uses the classifier pre/post processors as
-defined by `...processor.DetectorPreprocessor` and `...processor.DetectorMnetNMSPostprocessor` in `deploy_manifest.json`.
+The Android LRE can accomodate any type of computer vision model. The example above illustrates an object detection model, which uses the object detection pre- and post-processors as defined by `...processor.DetectorPreprocessor` and `...processor.DetectorMnetNMSPostprocessor` in `deploy_manifest.json`.
 
-> While the `deploy_manifest.json` file provides necessary information about pre/post processing, class labels, and the name of the compiled model artifact, its structure is specific to this particular example application, and not dictated by either the compiled `modelLibrary.so` or the Android LRE. Model-specific information about pre/post processing and class labels can be transmitted to your own application in any format that suits your needs.
+> While the `deploy_manifest.json` file provides necessary information about pre- and post-processing, class labels, and the name of the compiled model artifact, its structure is specific to this particular example application, and not dictated by either the compiled `modelLibrary.so` or the Android LRE. Model-specific information about pre- and post-processing and class labels can be transmitted to your own application in any format that suits your needs.
 
 ## Override Pre/Post Processors
 The `inference` object inside the `deploy_manifest.json` file contains an `output_ctx` key that describes details of expected input data for preprocessing and output data for postprocessing.
