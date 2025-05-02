@@ -52,7 +52,7 @@ wget --user=$REPOSITORY_TOKEN_NAME --password=$REPOSITORY_TOKEN_PASSCODE https:/
 Copy the `android-lre-release-1.0.0.aar` to `app/libs/`.
 
 ## Download a Model
-This application already includes an optimized and compiled model. If you want to use a different model you've compiled using [LEIP Optimize](docs.latentai.io/leip/optimize/), follow these instructions. 
+This application already includes an optimized and compiled model. If you want to use a different model you've compiled using [LEIP Optimize](https://docs.latentai.io/leip/optimize/latest/), follow these instructions. 
 
 To add a model to the application, you'll need to place it inside `app/src/main/assets/models`. 
 Models are stored in directories which look something like the following:
