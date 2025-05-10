@@ -22,7 +22,7 @@ If you already have an email address and password for accessing the Latent AI Re
 ## Access Latent AI's Package Repository
 To install packages from Latent AI, you'll need to create a personal access token. 
 
-1. Log in to the [Latent AI Repository](repository.latentai.com).
+1. Log in to the [Latent AI Repository](https://repository.latentai.io).
    1. Click the Sign in link in the upper right.
    2. Select Sign In with SSO.
    3. Enter your access credentials.
